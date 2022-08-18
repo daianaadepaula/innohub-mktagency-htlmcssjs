@@ -1,389 +1,470 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* RESET */
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-a, img, span, time, label, input, button, textarea, ion-icon{
-    display: block;
+a,
+img,
+span,
+time,
+label,
+input,
+button,
+textarea,
+ion-icon {
+  display: block;
 }
 
-img{
-    height: auto;
+img {
+  height: auto;
 }
 
-input, button, textarea{
-    background: none;
-    border: none;
-    font: inherit;
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
 }
 
-input, textarea{
-    width: 100%;
+input,
+textarea {
+  width: 100%;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
-ion-icon{
-    pointer-events: none;
+ion-icon {
+  pointer-events: none;
 }
 
-address{
-    font-style: normal;
+address {
+  font-style: normal;
 }
 
-html{
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    scroll-behavior: smooth;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: #FFFFFF;
-    font-size: 1.6rem;
-    line-height: 1.8;
+body {
+  background-color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-::-webkit-scrollbar-track{
-    background-color: #FAFAFA;
+::-webkit-scrollbar-track {
+  background-color: #fafafa;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: #CCCCCC;
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background-color: #B3B3B3;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;
 }
 
-:focus-visible{
-    outline-offset: 4px;
+:focus-visible {
+  outline-offset: 4px;
 }
-
-
 
 /* REUSED STYLE */
 
-.container{
-    padding-inline: 15px;
+.container {
+  padding-inline: 15px;
 }
 
-.btn{
-    max-width: max-content;
-    color: #FFFFFF;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 10px 30px;
-    border-radius: 5px;
-    transition: 0.25s ease;
+.btn {
+  max-width: max-content;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.25s ease;
 }
 
-.btn-primary{
-    background-image: linear-gradient(to left top, #FF2E9D, #FF6A00);
-    background-size: 1000%;
+.btn-primary {
+  background-image: linear-gradient(to left top, #ff2e9d, #ff6a00);
+  background-size: 1000%;
 }
 
-.btn-primary:is(:hover, :focus){
-    background-position: bottom right;
+.btn-primary:is(:hover, :focus) {
+  background-position: bottom right;
 }
 
-.btn-secondary{
-    background-color: #FFFFFF;
-    color: #000000;
+.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.btn-secondary:is(:hover, :focus){
-    background-color: #000000;
-    color: #FFFFFF;
+.btn-secondary:is(:hover, :focus) {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.section{
-    padding-block: 60px;
+.section {
+  padding-block: 60px;
 }
 
-.h1, .h2, .h3{
-    color: #000000;
-    font-family: 'League Spartan', sans-serif;
-    line-height: 1.2;
+.h1,
+.h2,
+.h3 {
+  color: #000000;
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.2;
 }
 
-.h1{
-    font-size: 3.5rem;
+.h1 {
+  font-size: 3.5rem;
 }
 
-.h2{
-    font-size: 3rem;
+.h2 {
+  font-size: 3rem;
 }
 
-.h3{
-    font-size: 2.1rem;
+.h3 {
+  font-size: 2.1rem;
 }
 
-.w-100{
-    width: 100%;
+.w-100 {
+  width: 100%;
 }
 
-.section-title, .section-text{
-    text-align: center;
+.section-title,
+.section-text {
+  text-align: center;
 }
 
-.section-text{
-    font-size: 1.3rem;
+.section-text {
+  font-size: 1.3rem;
 }
 
-.grid-list{
-    display: grid;
-    gap: 30px;
+.grid-list {
+  display: grid;
+  gap: 30px;
 }
 
-.img-holder{
-    aspect-ratio: 510 / 700;
-    background-color: #CCCCCC;
+.img-holder {
+  aspect-ratio: 510 / 700;
+  background-color: #cccccc;
 }
 
-.img-cover{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 /* HEADER */
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding-block: 15px;
-    border-block-end: 1px solid #EDEDED;
-    z-index: 4;
-    transition: 0.25s ease;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding-block: 15px;
+  border-block-end: 1px solid #ededed;
+  z-index: 4;
+  transition: 0.25s ease;
 }
 
-.header.active{
-    filter: drop-shadow(0 2px 28px #A9A9A9);
+.header.active {
+  filter: drop-shadow(0 2px 28px #a9a9a9);
 }
 
-.header > .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-    font-family: 'League Spartan', sans-serif;
-    color: #000000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1;
+.logo {
+  font-family: "League Spartan", sans-serif;
+  color: #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.nav-toggle-btn{
-    font-size: 40px;
+.nav-toggle-btn {
+  font-size: 40px;
 }
 
-.nav-toggle-btn.active .open, .nav-toggle-btn .close { 
-    display: none; 
+.nav-toggle-btn.active .open,
+.nav-toggle-btn .close {
+  display: none;
 }
 
-.nav-toggle-btn .open, .nav-toggle-btn.active .close { 
-    display: block; 
+.nav-toggle-btn .open,
+.nav-toggle-btn.active .close {
+  display: block;
 }
 
-
-.navbar{
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: calc(100% - 30px);
-    width: 100%;
-    padding-inline: 0;
-    border: 1px solid #EDEDED;
-    transition: 0.3s cubic-bezier(0.33, 0.85, 0.4, 0.96);
-    max-height: 0;
-    visibility: hidden;
-    overflow: hidden;
+.navbar {
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100% - 30px);
+  width: 100%;
+  padding-inline: 0;
+  border: 1px solid #ededed;
+  transition: 0.3s cubic-bezier(0.33, 0.85, 0.4, 0.96);
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
 }
 
-.navbar.active{
-    max-height: 320px;
-    visibility: visible;
-    transition-duration: 0.5s;
+.navbar.active {
+  max-height: 320px;
+  visibility: visible;
+  transition-duration: 0.5s;
 }
 
-.navbar-list{
-    padding: 20px 15px;
-    padding-block-start: 10px;
-    opacity: 0;
-    transition: 0.25s ease;
+.navbar-list {
+  padding: 20px 15px;
+  padding-block-start: 10px;
+  opacity: 0;
+  transition: 0.25s ease;
 }
 
-.navbar.active .navbar-list{
-    opacity: 1;
+.navbar.active .navbar-list {
+  opacity: 1;
 }
 
-.navbar-link{
-    color: #18181B;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 1.7rem;
-    line-height: 1.2;
-    padding-block: 8px;
-    transition: 0.25s ease;
+.navbar-link {
+  color: #18181b;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  padding-block: 8px;
+  transition: 0.25s ease;
 }
 
-.navbar-link:is(:hover, :focus){
-    color: #FA004F;
+.navbar-link:is(:hover, :focus) {
+  color: #fa004f;
 }
 
-.header .btn{
-    margin-block-start: 10px;
+.header .btn {
+  margin-block-start: 10px;
 }
 
 /* HERO */
 
-.hero{
-    padding-block-start: calc(60px + 50px);
-    text-align: center;
+.hero {
+  padding-block-start: calc(60px + 50px);
+  text-align: center;
 }
 
-.hero-content{
-    margin-block-end: 30px;
+.hero-content {
+  margin-block-end: 30px;
 }
 
-.hero-subtitle{
-    color: #000000;
-    font-size: 1.4rem;
-    font-weight: 500;
+.hero-subtitle {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-.hero-title{
-    margin-block: 12px 8px;
+.hero-title {
+  margin-block: 12px 8px;
 }
 
-.hero-text{
-    font-size: 1.4rem;
+.hero-text {
+  font-size: 1.4rem;
 }
 
-.hero .btn{
-    margin-inline: auto;
-    margin-block-start: 20px;
+.hero .btn {
+  margin-inline: auto;
+  margin-block-start: 20px;
 }
 
 /* SERVICE */
 
-.service{
-    background-color: #FBF9F9;
+.service {
+  background-color: #fbf9f9;
 }
 
-.service .section-text{
-    margin-block: 5px 35px;
+.service .section-text {
+  margin-block: 5px 35px;
 }
 
-.service-card{
-    background-color: #FFFFFF;
-    padding: 20px 15px;
-    border: 1px solid #E6E6E6;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 6px 24px #A9A9A9;
-    transition: 0.5s ease;
+.service-card {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 6px 24px #a9a9a9;
+  transition: 0.5s ease;
 }
 
-.service-card:is(:hover, :focus-within){
-    transform: translateY(-10px);
+.service-card:is(:hover, :focus-within) {
+  transform: translateY(-10px);
 }
 
-.service-card .card-icon{
-    color: #FFFFFF;
-    font-size: 25px;
-    max-width: max-content;
-    margin-inline: auto;
-    padding: 18px;
-    border-radius: 50%;
+.service-card .card-icon {
+  color: #ffffff;
+  font-size: 25px;
+  max-width: max-content;
+  margin-inline: auto;
+  padding: 18px;
+  border-radius: 50%;
 }
 
-.service-card .card-title{
-    margin-block: 20px 8px;
+.service-card .card-title {
+  margin-block: 20px 8px;
 }
 
-.service-card .card-text{
-    font-size: 1.3rem;
+.service-card .card-text {
+  font-size: 1.3rem;
 }
 
 /* PORTFOLIO */
 
-.project .section-text{
-    margin-block: 5px 35px;
+.project .section-text {
+  margin-block: 5px 35px;
 }
 
-.project-card{
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
+.project-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.project-card::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.5;
-    transition: 0.5s ease;
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  transition: 0.5s ease;
 }
 
-.project-card:is(:hover, :focus-within)::after{
-    opacity: 0.8;
+.project-card:is(:hover, :focus-within)::after {
+  opacity: 0.8;
 }
 
-.project-card .card-content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    z-index: 1;
-    transition: 0.5s ease;
+.project-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: 0.5s ease;
 }
 
-.project-card:is(:hover, :focus-within) .card-content{
-    transform: translateY(-20px);
+.project-card:is(:hover, :focus-within) .card-content {
+  transform: translateY(-20px);
 }
 
-.project-card .card-subtitle{
-    color: #C5C8D8;
-    font-size: 1.3rem;
-    line-height: 1;
+.project-card .card-subtitle {
+  color: #c5c8d8;
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
-.project-card .card-title{
-    color: #FFFFFF;
-    margin-block: 12px 15px;
+.project-card .card-title {
+  color: #ffffff;
+  margin-block: 12px 15px;
 }
 
 /* ABOUT */
+
+.about {
+  background-color: #fbf9f9;
+}
+
+.about-banner {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-block-end: 25px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #fa004f;
+  font-size: 32px;
+  padding: 16px;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 1px #ffffff;
+  }
+  100% {
+    box-shadow: 0 0 0 25px transparent;
+  }
+}
+
+.about:is(.section-title, .section-text) {
+  text-align: left;
+}
+
+.about .section-title {
+  margin-block-end: 5px;
+}
+
+.about .section-text:not(:last-child) {
+  margin-block-end: 18px;
+}
+
+.about .h3 {
+  margin-block-end: 8px;
+}
+
+.about-list {
+  margin-block: 15px 18px;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.about-item ion-icon {
+  color: #fa004f;
+  flex-shrink: 0;
+  margin-block-start: 2px;
+}
+
+.about-item:not(:last-child) {
+  margin-block-end: 12px;
+}
