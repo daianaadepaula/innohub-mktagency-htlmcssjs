@@ -510,3 +510,44 @@ body {
 .cta .btn {
   margin-inline: auto;
 }
+
+/* BLOG */
+
+.blog .section-text {
+  margin-block: 5px 35px;
+}
+
+.blog-card {
+  background-color: #fbf9f9;
+}
+
+.blog-card .card-banner {
+  overflow: hidden;
+}
+
+.blog-card .card-banner img {
+  transition: 0.5s ease;
+}
+
+.blog-card:is(:hover, :focus-within) .card-banner img {
+  transform: scale(1.05);
+}
+
+.blog-card .card-content {
+  padding: 15px;
+}
+
+.blog-card .time {
+  color: #fa004f;
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-block-end: 10px;
+}
+
+.blog-card .card-title {
+  transition: 0.25s ease;
+}
+
+.blog-card .card-title:is(:hover, :focus) {
+  color: #fa004f;
+}
