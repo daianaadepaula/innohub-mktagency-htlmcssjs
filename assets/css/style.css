@@ -551,3 +551,130 @@ body {
 .blog-card .card-title:is(:hover, :focus) {
   color: #fa004f;
 }
+
+/* CONTACT */
+
+.contact {
+  background-color: #fafafa;
+}
+
+.contact .section-title {
+  margin-block: 5px 35px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 2px;
+  margin-block-end: 30px;
+  box-shadow: 0 6px 24px #808080;
+}
+
+.input-field {
+  background-color: #fbf9f9;
+  color: #18181b;
+  font-size: 1.4rem;
+  padding: 15px;
+  border-radius: 2px;
+  outline: 1px solid transparent;
+  outline-offset: 0;
+  margin-block-end: 15px;
+}
+
+.input-field::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input-field:focus {
+  outline-color: #fa004f;
+}
+
+.input-field::placeholder {
+  transition: 0.25s ease;
+}
+
+.input-field:focus::placeholder {
+  opacity: 0;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 80px;
+  height: 100px;
+  max-height: 200px;
+  overscroll-behavior: contain;
+}
+
+.checkbox {
+  width: max-content;
+  margin-block-start: 5px;
+  accent-color: #fa004f;
+}
+
+.label-link {
+  display: inline-block;
+  color: #fa004f;
+}
+
+.label-link:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-block-end: 15px;
+}
+
+.checkbox-wrapper .label {
+  font-size: 1.3rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 25px;
+}
+
+.contact-item {
+  min-width: 100%;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 6px 24px #808080;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-card .card-icon {
+  background-color: #f7fafd;
+  color: #fa004f;
+  font-size: 25px;
+  padding: 13px;
+  border-radius: 50%;
+  transition: 0.25s ease;
+}
+
+.contact-card:is(:hover, :focus) .card-icon {
+  background-color: #fa004f;
+  color: #fff;
+}
+
+.contact-card .card-title {
+  margin-block-end: 5px;
+}
+
+.contact-card:is(.card-link, .card-address) {
+  font-size: 25px;
+  transition: 0.25s ease;
+}
+
+.contact-card .card-link:is(:hover, :focus) {
+  color: #fa004f;
+}
