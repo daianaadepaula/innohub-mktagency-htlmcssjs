@@ -678,3 +678,48 @@ textarea.input-field {
 .contact-card .card-link:is(:hover, :focus) {
   color: #fa004f;
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: #f7fafd;
+  padding-block: 20px;
+}
+
+.copyright {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.copyright-link {
+  color: #fa004f;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* BACK TO TOP */
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #18181b;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 28px #000000;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+.back-top-btn:is(:hover, :focus) {
+  opacity: 0.9;
+}

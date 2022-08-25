@@ -1,11 +1,11 @@
 
 
-const addEventOnElem = function (elem, type, callback){
-    if(elem.length > 1){
-        for (let i = 0; i < elem.length; i++){
+const addEventOnElem = function (elem, type, callback) {
+    if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
             elem[i].addEventListener(type, callback);
         }
-    }else{
+    } else {
         elem.addEventListener(type, callback);
     }
 }
@@ -29,11 +29,17 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
+/* header active */
+
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
 window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
         header.classList.add("active");
+        backTopBtn.classList.add("active");
     } else {
         header.classList.remove("active");
+        backTopBtn.classList.remove("active");
     }
 });
