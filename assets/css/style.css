@@ -1044,3 +1044,83 @@ textarea.input-field {
     font-size: 32px;
   }
 }
+
+/* responsive for larger than 1200px screen */
+
+@media (min-width: 1200px) {
+  /* RESET */
+
+  /* REUSED STYLE */
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  /* SERVICE */
+
+  .service-card {
+    padding: 30px;
+  }
+
+  .service-card .h3 {
+    font-size: 2.5rem;
+  }
+
+  /* PROJECT */
+
+  .project-card .card-content {
+    padding: 30px;
+  }
+
+  .project-card .card-subtitle {
+    font-size: 1.6rem;
+  }
+
+  /* ABOUT */
+
+  .about .container {
+    gap: 60px;
+  }
+
+  .about-item {
+    gap: 7px;
+  }
+
+  .about-item ion-icon {
+    font-size: 20px;
+  }
+
+  /* CTA */
+
+  .cta .section-title {
+    margin-block: 15px 24px;
+  }
+
+  /* BLOG */
+
+  .blog-card .time {
+    font-size: 1.6rem;
+  }
+
+  .blog-card.grid .h3 {
+    font-size: 2.4rem;
+  }
+
+  /* CONTACT */
+
+  .contact-form {
+    padding: 50px;
+  }
+
+  .contact-card {
+    gap: 20px;
+  }
+
+  .contact-card .card-icon {
+    padding: 15px;
+  }
+}
